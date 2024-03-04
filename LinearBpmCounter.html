@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="YTF-8" />
+        <title>線性BPM計算</title>
+        <!--style標籤-->
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div style="text-align: center; line-height: 1.5cm; ">
+
+        <span>請輸入起始歌速:</span>
+        <input id="InitialVelo" type="number" min=0 value=128 style="width: 40px;"></input>
+        <span>BPM</span>
+        <br/>
+
+        <span>請輸入尾端歌速:</span>
+        <input id="EndingVelo" type="number" min=0 value=134 style="width: 40px;"></input>
+        <span>BPM</span>
+        <br/>
+        <br/>
+
+        <span>請輸入起始位置在範圍內的比例:</span>
+        <input id="initialMole" type="number" min=0 value=2 style="width: 40px;"></input>
+        <span>/</span>
+        <input id="initialDeno" type="number" min=0 value=8 style="width: 40px;"></input>
+        <br/>
+
+        <span>請輸入尾端位置在範圍內的比例:</span>
+        <input id="EndingMole" type="number" min=0 value=6 style="width: 40px;"></input>
+        <span>/</span>
+        <input id="EndingDeno" type="number" min=0 value=8 style="width: 40px;"></input>
+        <br/>
+        <br/>
+
+        <div id="calculater"><input type="button" value="Calculate The Result"></input></div>
+        <input id="checkforround" type="checkbox"></input>
+        <label>是否需要四捨五入到小數後第</label>
+        <input id="DecimalDigitsNumber" type="number" min=0 value=5 style="width: 32px;"></input>
+        <label>位</label>
+
+        <div id="resultdisplay"></div>
+        <div id="resultclean"></div>
+
+
+        <div id="test"></div>
+
+        <script src="js/linebpmcount.js"></script>
+
+        </div>
+    </body>
+</html>
